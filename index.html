@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root">
+  <section class="calculator" lang="en">
+    <header>
+      <h1>Hesaplayıcı</h1>
+      <input type="text" readonly value="0" class="output" id="viewer">
+    </header>
+    <div>
+      <ul class="grid">
+        <li>
+          <button class="js-button" data-value="7">7</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="8">8</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="9">9</button>
+        </li>
+        <li class="del uppercase">
+          <button lang="tr" class="js-button secondary" id="delete">Sil</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="4">4</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="5">5</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="6">6</button>
+        </li>
+        <li>
+          <button class="js-button" data-operand="+">+</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="1">1</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="2">2</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="3">3</button>
+        </li>
+        <li>
+          <button class="js-button" data-operand="-">-</button>
+        </li>
+        <li>
+          <button class="js-button" data-operand=".">.</button>
+        </li>
+        <li>
+          <button class="js-button" data-value="0">0</button>
+        </li>
+        <li>
+          <button class="js-button" data-operand="/">/</button>
+        </li>
+        <li>
+          <button class="js-button" data-operand="x">x</button>
+        </li>
+        <li class="reset uppercase">
+          <button class="js-button secondary" id="clear">Sıfırla</button>
+        </li>
+        <li>
+          <button class="js-button tertiary" data-result="=" id="equals">=</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+<noscript>JavaScript desteklenmiyor!</noscript>
+<script src="calculator.js"></script>
+</body>
+</html>

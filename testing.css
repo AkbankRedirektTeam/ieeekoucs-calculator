@@ -1,0 +1,14 @@
+body {
+  background-color: green;
+}
+
+h1::after {
+  content: "v1.0";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#root header input {
+  color: aqua;
+}
